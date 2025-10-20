@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Landmarks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="site-title">NYC Landmarks</div>
+    </header>
+
+    <main>
+        <h1>NYC Landmarks Virtual Tour</h1>
+        <p class="intro">This site highlights some interesting landmarks across New York City's five boroughs.</p>
+
+
+        <h2>Videos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ECfleExsU6o?si=L4cxRAwK9G7c_3EM" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div class="videoWrapper.ration-1-16-9"></div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/15aY-JcGB-c?si=vTMtiNtCSBoSrY-H"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <h2>Featured Landmark</h2>
+        <!-- Featured image using <picture> -->
+        <picture>
+            <!-- Large screens (desktop/tablet) -->
+            <source media="(min-width: 645px)" srcset="images/pexels-kelsey-caroline-774981359-19122990.jpg">
+            <source media="(max-width: 644px)" srcset="images/square/pexels-kelsey-caroline-774981359-19122990.jpg">
+
+            <!-- Fallback image -->
+            <img src="images/pexels-kelsey-caroline-774981359-19122990.jpg"
+                alt="Wonder Wheel ferris wheel at Coney Island">
+        </picture>
+        <p>The Wonder Wheel is the iconic ferris wheel at Deno’s Wonder Wheel Amusement Park in Coney Island, Brooklyn. Standing 150 feet tall, it has been a centerpiece of the boardwalk skyline since its debut in 1920.</p>
+        <p>Coney Island has been a hub of seaside amusement for more than a century, known for its thrilling rides, bright lights, and summertime energy. From the historic Cyclone roller coaster to modern attractions, it remains one of New York City’s most beloved destinations for fun by the beach.</p>
+
+        <h3>NYC Landmarks</h3>
+        <div class="landmarks-grid">
+            <div class="landmark">
+                <figure>
+                    <img src="images/square/pexels-kelsey-caroline-774981359-19122990_sq_square.jpg"
+                        alt="Wonder Wheel ferris wheel at Coney Island">
+                    <figcaption><a href="https://www.pexels.com/photo/ferris-wheel-in-amusement-park-19122990/">Photo by
+                            Kelsey Caroline</a></figcaption>
+                </figure>
+                <h3>Wonder Wheel ferris wheel at Coney Island</h3>
+            </div>
+            <div class="landmark">
+                <figure>
+                    <img src="images/square/pexels-malcolmhill-12360516_sq_square.jpg" alt="Yankee Stadium">
+                    <figcaption><a href="https://www.pexels.com/photo/empty-stadium-12360516/">Photo by Malcolm Hill</a>
+                    </figcaption>
+                </figure>
+                <h3>Yankee Stadium</h3>
+            </div>
+            <div class="landmark">
+                <figure>
+                    <img src="images/square/pexels-tracehudson-2424391_sq_square.jpg"
+                        alt="Empire State Building with lower Manhattan in the background">
+                    <figcaption><a href="https://www.pexels.com/photo/empire-state-building-2424391/">Photo by Trace
+                            Hudson</a></figcaption>
+                </figure>
+                <h3>Empire State Building with lower Manhattan in the background</h3>
+            </div>
+            <div class="landmark">
+                <figure>
+                    <img src="images/square/pexels-mora-versio-2150673251-34091093_sq_square.jpg" alt="Statue of Liberty">
+                    <figcaption>
+                        <a href="https://www.pexels.com/photo/statue-of-liberty-in-new-york-city-usa-34091093/">Photo by
+                            Mora Versio</a>
+                    </figcaption>
+                </figure>
+                <h3>Statue of Liberty</h3>
+            </div>
+            <div class="landmark">
+                <figure>
+                    <img src="images/square/pexels-loquellano-12404963_sq_square.jpg"
+                        alt="Roosevelt Island Tramway leaving Manhattan">
+                    <figcaption><a href="https://www.pexels.com/photo/cable-car-above-city-street-12404963/">Photo by
+                            Raphael Loquellano</a></figcaption>
+                </figure>
+                <h3>Roosevelt Island Tramway leaving Manhattan</h3>
+            </div>
+            <div class="landmark">
+                <figure>
+                    <img src="images/square/praswin-prakashan-YOCN1a1m_dg-unsplash_sq_square.jpg"
+                        alt="Staten Island Ferry pulling into the dock">
+                    <figcaption><a
+                            href="https://unsplash.com/photos/a-large-ferry-boat-in-a-body-of-water-YOCN1a1m_dg">Photo by
+                            Praswin Prakashan</a></figcaption>
+                </figure>
+                <h3>Staten Island Ferry pulling into the dock</h3>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Site by Yanet De La Cruz</p>
+    </footer>
+</body>
+
+</html>

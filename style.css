@@ -4,3 +4,132 @@ img, video{
   max-width: 100%;
   height: auto;
 }
+
+.landmarks-grid{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+figure{ margin:0;}
+
+/* ----------------------
+Responsive video
+ --------------------- */ 
+ .videoWrapper {
+	position: relative;
+	padding-top: 25px;
+	height: 0;
+  clear:both;
+}
+
+/* 16:9 aspect ratio wrapper */
+.videoWrapper.ratio-16-9{
+    padding-bottom: 56.25%; /* 9 ÷ 16 = .5625 which is 56.25% */
+}
+
+/* 4:3 aspect ratio wrapper */
+.videoWrapper.ratio-4-3{
+    padding-bottom: 75%; /* 3 ÷ 4 = .75 which is 75% */
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+body {
+  background-color: hotpink;
+  font-family:'Times New Roman', serif;
+  font-size: 22px;
+  text-align: center;
+  width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style for all H1 elements */
+h1 {
+  color: black;           /* purple text */
+  font-size: 48px;          /* make it big */
+  font-family: Copperplate, Papyrus, fantasy; /* modern font */
+  text-align: center;       /* center the heading */
+  text-transform: uppercase;/* make all letters uppercase */
+  letter-spacing: 2px;      /* space between letters */
+}
+
+/* Style for all H2 elements */
+h2 {
+  color: black;           /* dark gray */
+  font-size: 48px;
+  font-family: Copperplate, Papyrus, fantasy; /* elegant font */
+  text-align: center;
+}
+
+h3{
+  color: black;
+  font-size: 30px;
+  font-family: Copperplate, Papyrus, fantasy;
+  text-transform: uppercase;
+  border: 2px solid black;
+  
+}
+
+/* HTML removed from this stylesheet — move any markup below into your .html file.
+   If you need styles for the card component, keep them here: */
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  text-transform: none; /* keep h3 text behavior consistent in card */
+}
+
+.card p {
+  margin: 0.5rem 0 1rem;
+  font-size: 1rem;
+}
+
+.card button {
+  background: #007bff;
+  color: #fff;
+  border: groove;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.card button:hover {
+  background: #0056b3;
+} 
+
+.landmarks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.landmark img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
